@@ -5,13 +5,23 @@
 	</head>
 	<body style="background: url(background.jpg) ; background-size:100% 100%; background-attachment: fixed">
                 <audio src="bensound-ukulele.mp3"  autoplay="autoplay"> </audio>
-		<label for="name">what is your name? (1 to 10 characters):</label>	
-		<input type="text" id="name" name="name" required minlength="1" maxlength="10" size="10>
+		
+		<form action="/my-handling-form-page" method="post">
+			<div>
+			  <label for="name">what is your name? (1 to 10 characters):</label>
+			  <input type="text" id="name" minlength="1" maxlength="10" size="10">
+			</div>
+			<div>
+			  <label for="msg">Message:</label>
+			  <textarea id="msg"></textarea>
+			</div>
+		 </form>
+		
 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
 	        	<li><a href="/about">About</a></li>
-				<li><a href="/resume">CV</a></li>
+			<li><a href="/resume">CV</a></li>
         		<li><a href="/blog">Blog</a></li>
     		</ul>
 		</nav>
@@ -27,8 +37,8 @@
 		<footer>
     		<ul>
         	<li><a href="mailto:g5chen@ucsd.edu" style='text-decoration:none;'>🏫 Send message to my school email</a></li>
-            <li><a href="mailto:chenguo0313@gmail.com" style='text-decoration:none;'>👧 Send message to my personal gmail</a></li>
-            <li><a href="mailto:1536705457@qq.com" style='text-decoration:none;'>🐧 Send message to my Chinese qq-mail</a></li>
+               <li><a href="mailto:chenguo0313@gmail.com" style='text-decoration:none;'>👧 Send message to my personal gmail</a></li>
+               <li><a href="mailto:1536705457@qq.com" style='text-decoration:none;'>🐧 Send message to my Chinese qq-mail</a></li>
 			</ul>
 		</footer>
 	</body>
