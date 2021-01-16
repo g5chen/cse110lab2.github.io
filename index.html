@@ -1,44 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<title style="text-align:center;">Hi 👋 , This is the new website created by Guo Chen</title>
 	</head>
 	<body style="background: url(background.jpg) ; background-size:100% 100%; background-attachment: fixed">
-                <audio src="bensound-ukulele.mp3"  autoplay="autoplay"> </audio>
-		
+		<audio src="bensound-ukulele.mp3"  autoplay="autoplay"> </audio>
+
 		<form action="/my-handling-form-page" method="post">
 			<div>
-			  <label for="name">What is your name? (1 to 10 characters):</label>
+			  <label for="name" style="color:dimgray;">what is your name? (1 to 10 characters):</label>
 			  <input type="text" id="name" minlength="1" maxlength="10" size="50" placeholder="anything you want me to call you">
 			</div>
 			<div>
-			  <label for="msg">Send me messages directly from the site:</label>
-			  <textarea id="msg" rows="5" cols="33" spellcheck="false"></textarea>
+			  <label for="msg" style="color:dimgray;">Send me Messages directly from the site:</label>
+			  <textarea id="msg" rows="5" cols="33" spellcheck="false" placeholder="Nice to meet you"></textarea>
+			</div>
+			<div>
+				<table style="margin: auto; color:dimgray;">
+					<thead>
+						<tr>
+							<th colspan="2">My name</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>in English</td>
+							<td>Guo Chen</td>
+						</tr>
+						<tr>
+							<td>in 中文（Chinese）</td>
+							<td>陈果</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		 </form>
-		
+
 		<nav>
     		<ul>
-        		<li><a href="/">Home</a></li>
+        		<li><a href="/home">Home</a></li>
 	        	<li><a href="/about">About</a></li>
-			<li><a href="/resume">CV</a></li>
+				<li><a href="/resume">CV</a></li>
         		<li><a href="/blog">Blog</a></li>
     		</ul>
 		</nav>
-		<a href="chenresume.pdf" download="newfilename">Download the pdf</a>
+		
 		<div class="container">
     		<div class="blurb">
 				<h1 style="background-color:DarkSalmon;font-family:verdana;text-align:center;">Hi there, I'm <strong>Guo Chen</strong>!</h1>
 				<h2 style="background-color:DarkSalmon;font-family:verdana;text-align:center;">💻 Computer Science major, 3rd year student 👩‍🎓</h2>
 				<p style="color:dimgray;font-family:courier;font-size:160%;text-align:center;">Love <strong>curry chicken</strong>🍛, <strong>dog</strong> 🐶and <strong>watching movies</strong>s🎬</p>
-	
+				<p>This button transfers you to another website!</p>
+				    <a href="https://www.cookingclassy.com/chicken-curry/" target="_blank">
+	                    <input type="button" value="Click me to know how to make curry chicken" class="favorite styled">
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
+		
 		<footer>
-    		<ul>
-        	<li><a href="mailto:g5chen@ucsd.edu" style='text-decoration:none;'>🏫 Send message to my school email</a></li>
-               <li><a href="mailto:chenguo0313@gmail.com" style='text-decoration:none;'>👧 Send message to my personal gmail</a></li>
-               <li><a href="mailto:1536705457@qq.com" style='text-decoration:none;'>🐧 Send message to my Chinese qq-mail</a></li>
+    		<ul type="circle">
+        	<li><a href="mailto:g5chen@ucsd.edu"style='text-decoration:none;'>🏫 Send message to my school email</a></li>
+            <li><a href="mailto:chenguo0313@gmail.com"style='text-decoration:none;'>👧 Send message to my personal gmail</a></li>
+            <li><a href="mailto:1536705457@qq.com"style='text-decoration:none;'>🐧 Send message to my Chinese qq-mail</a></li>
 			</ul>
 		</footer>
 	</body>
